@@ -1,0 +1,16 @@
+<Project>
+
+  <PropertyGroup>
+    <BaseOutputPath>$(SolutionDir)Binary</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(SolutionDir)Temp\$(MSBuildProjectName)</BaseIntermediateOutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+      <PackageOutputPath>$(SolutionDir)Binary\$(Configuration)\NuGet</PackageOutputPath> 
+      <Authors>Atila Čeki</Authors>
+      <Company>ActLikeAI</Company>
+      <Copyright>Copyright (c) 2021 Atila Čeki. All rights reserved.</Copyright>
+  </PropertyGroup>
+
+</Project>

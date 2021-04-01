@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>ActLikeAI.Benchmark</AssemblyName>
+    <RootNamespace>ActLikeAI.Benchmark</RootNamespace>
+    <Version>0.2.0</Version>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Macro-benchmarking library for .Net 5.</Description>      
+    <PackageTags>benchmark performance</PackageTags>      
+    <RepositoryType>git</RepositoryType>      
+    <RepositoryUrl>https://github.com/ActLikeAI/Benchmark.git</RepositoryUrl>      
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>UnitTests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="26.1.0" />
+    <PackageReference Include="Spectre.Console" Version="0.38.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
